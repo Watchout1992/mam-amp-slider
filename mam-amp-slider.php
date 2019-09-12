@@ -15,7 +15,6 @@ function mwpp_script_load(){
     wp_enqueue_script( 'mam-amp-carousel', 'https://cdn.ampproject.org/v0/amp-carousel-0.1.js');
 }
 
-
 if( function_exists('acf_add_local_field_group') ):
 
     acf_add_local_field_group(array(
