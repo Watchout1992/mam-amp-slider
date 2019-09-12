@@ -7,12 +7,14 @@
  * Author: Moveahead Media
  * Author URI: https://www.moveaheadmedia.com.au/
  */
+
 // add plugin scripts
 add_action( 'wp_enqueue_scripts', 'mwpp_script_load' );
 function mwpp_script_load(){
     wp_enqueue_script( 'mam-amp', 'https://cdn.ampproject.org/v0.js');
     wp_enqueue_script( 'mam-amp-carousel', 'https://cdn.ampproject.org/v0/amp-carousel-0.1.js');
 }
+
 
 if( function_exists('acf_add_local_field_group') ):
 
@@ -141,7 +143,7 @@ function amp_slider_function( $atts ){
     ), $atts );
 
     $html = '<div class="main-amp-slider">';
-    $html .= '<amp-carousel width="1600" height="686" layout="responsive" autoplay delay="4000" type="slides">';
+    $html .= '<amp-carousel width="1920" height="700" layout="responsive" autoplay delay="4000" type="slides">';
     if( have_rows('slides', $a['id']) ){
         $count = 0;
         while ( have_rows('slides', $a['id']) ){
@@ -150,7 +152,7 @@ function amp_slider_function( $atts ){
             $text = get_sub_field('content');
             $count = $count + 1;
             $html .= '<div class="amp-slide amp-slide-'.$count.'">';
-            $html .= '<amp-img src="'.$image.'" width="1600" height="686" layout="responsive"></amp-img>';
+            $html .= '<amp-img src="'.$image.'" width="1920" height="1280" layout="responsive"></amp-img>';
             $html .= '<div class="slider-content">';
             $html .= '<div class="container">';
             $html .= $text;
