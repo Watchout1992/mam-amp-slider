@@ -3,7 +3,7 @@
 Contributors: alisal
 Tags: AMP, Slider, Moveahead Media, AMP Carousel, AMP Slider
 Donate link: paypal.me/Peace71
-Requires at least: 4.4.2
+Requires at least: 3.5
 Tested up to: 5.2.3
 Requires PHP: 5.6
 Stable tag: trunk
