@@ -9,16 +9,15 @@
  */
 
 // add plugin scripts
-add_action( 'wp_enqueue_scripts', 'mwpp_script_load' );
-function mwpp_script_load(){
+add_action( 'wp_enqueue_scripts', 'mamps_script_load' );
+function mamps_script_load(){
     wp_enqueue_script( 'mam-amp', 'https://cdn.ampproject.org/v0.js');
     wp_enqueue_script( 'mam-amp-carousel', 'https://cdn.ampproject.org/v0/amp-carousel-0.1.js');
 }
 
+if( function_exists('mamps_add_local_field_group') ):
 
-if( function_exists('acf_add_local_field_group') ):
-
-    acf_add_local_field_group(array(
+    mamps_add_local_field_group(array(
         'key' => 'group_5d5f5f65c7cdd',
         'title' => 'Fast Main Slider',
         'fields' => array(
@@ -137,7 +136,7 @@ endif;
 
 
 // add amp slider shortcode
-function amp_slider_function( $atts ){
+function mamps_slider_function( $atts ){
     $a = shortcode_atts( array(
         'id' => get_the_ID()
     ), $atts );
@@ -165,4 +164,4 @@ function amp_slider_function( $atts ){
     $html .= '</div>';
     return $html;
 }
-add_shortcode( 'fast-slider', 'amp_slider_function' );
+add_shortcode( 'mamps-slider', 'mamps_slider_function' );
