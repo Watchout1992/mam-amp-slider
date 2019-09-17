@@ -15,9 +15,10 @@ function mamps_script_load(){
     wp_enqueue_script( 'mam-amp-carousel', 'https://cdn.ampproject.org/v0/amp-carousel-0.1.js');
 }
 
-if( function_exists('mamps_add_local_field_group') ):
+// add Advanced Custom Fields to wordpress pages back-end. // require advanced custom fields
+if( function_exists('acf_add_local_field_group') ):
 
-    mamps_add_local_field_group(array(
+    acf_add_local_field_group(array(
         'key' => 'group_5d5f5f65c7cdd',
         'title' => 'Fast Main Slider',
         'fields' => array(
