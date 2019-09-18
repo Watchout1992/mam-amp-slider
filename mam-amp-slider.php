@@ -149,10 +149,11 @@ function mamps_slider_function( $atts ){
         while ( have_rows('slides', $a['id']) ){
             the_row();
             $image = get_sub_field('image');
+            list($width, $height, $type, $attr) = getimagesize($image);
             $text = get_sub_field('content');
             $count = $count + 1;
             $html .= '<div class="amp-slide amp-slide-'.$count.'">';
-            $html .= '<amp-img src="'.$image.'" width="1920" height="1280" layout="responsive"></amp-img>';
+            $html .= '<amp-img src="'.$image.'" '.$attr.' layout="responsive"></amp-img>';
             $html .= '<div class="slider-content">';
             $html .= '<div class="container">';
             $html .= $text;

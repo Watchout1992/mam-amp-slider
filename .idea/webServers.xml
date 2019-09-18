@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fa09fce4-81b0-4ab0-a157-f7bfc0f9445f" name="Localhost Wordpress" url="http://localhost/blog-plugin/">
+        <fileTransfer port="0" mountedRoot="C:\wamp64\www\blog-plugin" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
