@@ -1,0 +1,299 @@
+[
+    {
+        "key": "group_5e212502bbe19",
+        "title": "AMP Slider",
+        "fields": [
+            {
+                "key": "field_5e212de08eaf5",
+                "label": "Shortcode",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<div id=\"shortcode-con\"><\/div>",
+                "new_lines": "",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5e2127f3d15f1",
+                "label": "Layout",
+                "name": "layout",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fill": "Fill",
+                    "fixed": "Fixed",
+                    "fixed-height": "Fixed Height",
+                    "flex-item": "Flex Item",
+                    "intrinsic": "Intrinsic",
+                    "nodisplay": "No Display",
+                    "responsive": "Responsive"
+                },
+                "default_value": [
+                    "responsive"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e212781d15ef",
+                "label": "Width",
+                "name": "width",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "col-md-4",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5e2127e1d15f0",
+                "label": "Height",
+                "name": "height",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "col-md-4",
+                    "id": ""
+                },
+                "default_value": 600,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5e212807d15f2",
+                "label": "Autoplay",
+                "name": "autoplay",
+                "type": "number",
+                "instructions": "Stops autoplaying after the requisite number of loops are made.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "col-md-4",
+                    "id": ""
+                },
+                "default_value": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5e212810d15f3",
+                "label": "Delay",
+                "name": "delay",
+                "type": "number",
+                "instructions": "Specifies the duration (in milliseconds) to delay advancing to the next slide when autoplay is enabled.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 5000,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5e212829d15f5",
+                "label": "Column",
+                "name": "slide-column",
+                "type": "select",
+                "instructions": "Bootstrap Columns Layout",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "col-md-1": "1\/12",
+                    "col-md-2": "2\/12",
+                    "col-md-3": "3\/12",
+                    "col-md-4": "4\/12",
+                    "col-md-5": "5\/12",
+                    "col-md-6": "6\/12",
+                    "col-md-7": "7\/12",
+                    "col-md-8": "8\/12",
+                    "col-md-9": "9\/12",
+                    "col-md-10": "10\/12",
+                    "col-md-11": "11\/12",
+                    "col-md-12": "12\/12"
+                },
+                "default_value": [
+                    "col-md-12"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e212815d15f4",
+                "label": "Type",
+                "name": "type",
+                "type": "select",
+                "instructions": "carousel (default): All slides are shown and are scrollable horizontally. Each slide may specify a different width using CSS.\r\nslides: Shows a single slide at a time, with each slide snapping into place as the user swipes.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "carousel": "Carousel",
+                    "slides": "Slides"
+                },
+                "default_value": [
+                    "carousel"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e212512d15ec",
+                "label": "Slides",
+                "name": "sliders",
+                "type": "repeater",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 1,
+                "max": 0,
+                "layout": "block",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5e212564d15ed",
+                        "label": "Background Image",
+                        "name": "background_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5e212564d15ee",
+                        "label": "Content",
+                        "name": "content",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "mamps-ampslider"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    }
+]
